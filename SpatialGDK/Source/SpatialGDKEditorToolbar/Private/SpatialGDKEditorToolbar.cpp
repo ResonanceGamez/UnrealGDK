@@ -1072,6 +1072,10 @@ void FSpatialGDKEditorToolbarModule::OnPropertyChanged(UObject* ObjectBeingModif
 		{
 			OnAutoStartLocalDeploymentChanged();
 		}
+		else if(PropertyName.ToString() == TEXT("bStartLocalServerWorker"))
+		{
+			OnAutoStartLocalReceptionistProxyServer();
+		}
 	}
 }
 
